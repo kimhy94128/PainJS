@@ -4,6 +4,8 @@ const colors = document.querySelectorAll('.color');
 const range = document.querySelector('.range');
 const btn_mode = document.querySelector('.btn_mode');
 const btn_save = document.querySelector('.btn_save');
+const moreColors = document.querySelector('#moreColors');
+const moreColor = document.querySelector('#moreColor')
 
 canvas.width = 700;
 canvas.height = 600;
@@ -19,6 +21,10 @@ function colorChange(){
   const color = this.style.backgroundColor;
   ctx.strokeStyle = color;
   ctx.fillStyle = color;
+}
+function colorChangeMore(){
+  moreColor.style.backgroundColor = this.value
+  ctx.strokeStyle = this.value
 }
 
 function startPainting(){
@@ -79,6 +85,7 @@ if(canvas){
   canvas.addEventListener('mouseleave', stopPainting)
   canvas.addEventListener('click', handleCanvasClick)
 }
+moreColors.addEventListener('change', colorChangeMore)
 btn_mode.addEventListener('click', changeMode)
 range.addEventListener('change', handleRangeChange)
 btn_save.addEventListener('click', handleSaveClick);
