@@ -1,0 +1,55 @@
+/* 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: #ccc;
+  padding: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas {
+  width: 700px;
+  height: 600px;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.controls {
+  text-align: center;
+}
+
+.controls input {
+  margin-bottom: 10px;
+}
+
+.controls_btn button {
+  border: 2px solid #000;;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  margin: 0 3px 10px 3px;
+}
+
+.controls_colors {
+  display: flex;
+  justify-content: center;
+}
+
+.controls_colors .color {
+  cursor: pointer;
+  border: 3px solid #fff;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 3px;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
